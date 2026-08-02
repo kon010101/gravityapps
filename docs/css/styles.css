@@ -41,11 +41,10 @@ body {
     radial-gradient(ellipse 90% 60% at 80% -10%, rgba(46, 196, 182, 0.12), transparent 55%),
     radial-gradient(ellipse 70% 50% at 10% 100%, rgba(46, 196, 182, 0.06), transparent 50%),
     linear-gradient(180deg, #070809 0%, #0a0c0e 100%);
-  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
-body.is-ready {
+.main.is-ready {
   animation: page-in 0.55s ease-out both;
 }
 
@@ -56,7 +55,7 @@ body.is-ready {
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
@@ -65,7 +64,7 @@ body.is-ready {
     scroll-behavior: auto;
   }
 
-  body.is-ready {
+  .main.is-ready {
     animation: none;
   }
 
@@ -97,9 +96,7 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line);
-  background: rgba(7, 8, 9, 0.78);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #070809;
 }
 
 .site-header__inner {
