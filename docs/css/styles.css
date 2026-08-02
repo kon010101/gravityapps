@@ -112,6 +112,10 @@ img {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.125rem;
@@ -122,6 +126,20 @@ img {
 
 .wordmark:hover {
   color: var(--ink);
+}
+
+.wordmark__mark {
+  width: 1.65rem;
+  height: 1.65rem;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+}
+
+.wordmark__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav {
@@ -144,11 +162,20 @@ img {
 }
 
 .nav a.nav-support {
-  color: var(--accent);
+  color: #041210;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.35rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav a.nav-support:hover {
-  color: #5ee0d4;
+  color: #041210;
+  background: #5ee0d4;
+  border-color: #5ee0d4;
 }
 
 .main {
@@ -536,13 +563,6 @@ code {
   .nav {
     gap: 1.15rem;
     flex-shrink: 0;
-  }
-
-  .wordmark {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .app-link {
