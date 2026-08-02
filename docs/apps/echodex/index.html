@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EchoDex — Gravity Apps</title>
+    <meta
+      name="description"
+      content="EchoDex — family-friendly Pokémon sound companion. Hear cries, search by voice, learn moves."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="wordmark" href="../../">Gravity Apps</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../" aria-current="page">Apps</a>
+          <a
+            class="nav-support"
+            href="https://ko-fi.com/gravityapps"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Support</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <header class="page-header">
+        <p><span class="status-pill">Coming soon</span></p>
+        <h1>EchoDex</h1>
+        <p>Pokémon cries, voice &amp; moves — a family-friendly sound companion.</p>
+        <ul class="meta-row">
+          <li><a href="privacy/">Privacy Policy</a></li>
+          <li>iOS &amp; Android · App Store not listed yet</li>
+        </ul>
+      </header>
+
+      <div class="shot-rail" aria-label="Screenshots">
+        <figure>
+          <img
+            src="screenshots/01-hero-cry.png"
+            alt="EchoDex showing Charizard with cry playback"
+            width="1206"
+            height="2622"
+            loading="eager"
+          />
+          <figcaption>Hear every cry</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="screenshots/02-voice-search.png"
+            alt="EchoDex voice search with microphone"
+            width="1206"
+            height="2622"
+            loading="lazy"
+          />
+          <figcaption>Search by voice</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="screenshots/03-moves.png"
+            alt="EchoDex moves list with spoken attack names"
+            width="1206"
+            height="2622"
+            loading="lazy"
+          />
+          <figcaption>Learn the moves</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="screenshots/04-grid.png"
+            alt="EchoDex Pokémon grid browser"
+            width="1206"
+            height="2622"
+            loading="lazy"
+          />
+          <figcaption>Browse the full list</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="screenshots/05-german.png"
+            alt="EchoDex interface in German"
+            width="1206"
+            height="2622"
+            loading="lazy"
+          />
+          <figcaption>English &amp; German</figcaption>
+        </figure>
+      </div>
+
+      <div class="prose prose--readable">
+        <h2>Overview</h2>
+        <p>
+          EchoDex is a family-friendly Pokémon sound companion. Say a name, hear
+          the cry, learn the moves.
+        </p>
+        <ul class="feature-list">
+          <li>Hear official-style cries for hundreds of Pokémon</li>
+          <li>Search by voice — say a name into the mic</li>
+          <li>Browse the full list and tap to explore</li>
+          <li>Listen to move / attack names out loud</li>
+          <li>Switch between English and German</li>
+        </ul>
+        <h2>How to use</h2>
+        <ol class="feature-list">
+          <li>Tap the mic and say a Pokémon name</li>
+          <li>Or type / pick from the grid</li>
+          <li>Play the cry and hear move names</li>
+        </ol>
+        <p class="disclaimer">
+          EchoDex is an unofficial fan-made app and is not affiliated with,
+          endorsed by, or associated with Nintendo, The Pokémon Company, Game
+          Freak, or Creatures Inc. Pokémon and Pokémon character names are
+          trademarks of their respective owners.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="year"></span> Gravity Apps</p>
+      </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

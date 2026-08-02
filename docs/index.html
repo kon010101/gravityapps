@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gravity Apps</title>
+    <meta
+      name="description"
+      content="Indie iOS apps, built simple. Gravity Apps — developer home and privacy policies."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="wordmark" href="./">Gravity Apps</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="apps/">Apps</a>
+          <a
+            class="nav-support"
+            href="https://ko-fi.com/gravityapps"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Support</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero" aria-label="Intro">
+        <h1 class="hero__brand">Gravity Apps</h1>
+        <p class="hero__tagline">Indie iOS apps, built simple.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="apps/">View apps</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="apps-heading">
+        <h2 class="section__title" id="apps-heading">Apps</h2>
+        <p class="section__lead">Overview and privacy policies for each product.</p>
+        <ul class="app-list">
+          <li>
+            <a class="app-link" href="apps/echodex/">
+              <span class="app-link__name">EchoDex</span>
+              <span class="app-link__meta">Pokémon cries, voice &amp; moves</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="year"></span> Gravity Apps</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
