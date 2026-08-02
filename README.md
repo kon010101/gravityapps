@@ -43,7 +43,7 @@ docs/
   apps/index.html
   apps/echodex/                 Overview + screenshots
   apps/echodex/privacy/         EN/DE privacy (from store/privacy)
-  apps/echodex/screenshots/     Store phone shots 01–05
+  apps/echodex/screenshots/     EN phone 01–03 + tablet portrait/landscape
   css/styles.css
   js/main.js
 ```

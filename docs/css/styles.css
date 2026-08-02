@@ -422,6 +422,14 @@ img {
   scroll-snap-align: start;
 }
 
+.shot-rail--tablet figure {
+  width: min(55vw, 16rem);
+}
+
+.shot-rail--tablet figure.is-landscape {
+  width: min(72vw, 22rem);
+}
+
 .shot-rail img {
   display: block;
   width: 100%;
