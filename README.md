@@ -33,7 +33,7 @@ Wire that into:
 - Pokemon repo `src/config/legal.ts` → `PRIVACY_POLICY_URL`
 - `app.json` → `expo.extra.store.privacyPolicyUrl`
 - `store/ios/*` and `store/android/*` → `PRIVACY_POLICY_URL`
-- Replace `support@REPLACE_WITH_YOUR_DOMAIN` here and in the app
+- Contact email: `info@gravityapps.de`
 
 ## Structure
 
